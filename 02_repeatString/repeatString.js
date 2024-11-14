@@ -1,9 +1,12 @@
 const repeatString = function (str, n) {
-  let temp = ''
+  if (n < 0) return 'ERROR'
+  if (!str) return ''
+
+  let tmp = ''
   for (let i = 0; i < n; i++) {
-    temp += str
+    tmp += str
   }
-  return temp
+  return tmp
 }
 
 // Do not edit below this line
